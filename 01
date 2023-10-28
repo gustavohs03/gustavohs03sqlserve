@@ -1,0 +1,34 @@
+-- Criação da tabela Usuário
+CREATE TABLE Usuario (
+    ID INT PRIMARY KEY IDENTITY(1,1),
+    Nome VARCHAR(100),
+    CPF VARCHAR(15),
+    Cidade VARCHAR(100),
+    Endereco VARCHAR(255),
+    Sexo CHAR(1)
+);
+
+-- Criação da tabela Médico
+CREATE TABLE Medico (
+    ID INT PRIMARY KEY IDENTITY(1,1),
+    Nome VARCHAR(100),
+    CPF VARCHAR(15),
+    Especialidade VARCHAR(100)
+);
+
+-- Criação da tabela Paciente
+CREATE TABLE Paciente (
+    ID INT PRIMARY KEY IDENTITY(1,1),
+    Nome VARCHAR(100),
+    CPF VARCHAR(15),
+    Cidade VARCHAR(100),
+    Endereco VARCHAR(255),
+    Sexo CHAR(1)
+);
+
+-- Criação da tabela Agendamento
+CREATE TABLE Agendamento (
+    ID INT PRIMARY KEY IDENTITY(1,1),
+    Data DATE,
+    Hora TIME
+);
